@@ -77,7 +77,6 @@ numberButton.forEach(button => button.addEventListener('click',() =>{
     calculator.addNumber(button.innerText)
     calculator.Display()
 }))
-
 operationButton.forEach(button => button.addEventListener('click',() =>{
     calculator.addOperation(button.innerText)
     calculator.Display()

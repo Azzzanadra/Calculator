@@ -1,30 +1,39 @@
+body{
+    background: rgb(185, 185, 185);
+}
 button{
     width: 100%;
     background: none;
     border: none;
     padding: 15px;
     cursor: pointer;
+    font-family: 'Abyssinica SIL', sans-serif;
 }
 
 body > SECTION{
-    background: black;
+    background: rgb(98, 204, 233);
     width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 45px;
+    border-style: solid;
+    border-color: darkblue
 }
 body{
     display: flex;
     justify-content: center;
 }
 button{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     width: 17%;
     margin: 10px;
     border-radius: 45px;
-    background: white;
+    background: rgb(197, 197, 197);
+    color: rgb(3, 3, 96);
+    border-style: solid;
+    border-color: black;
 }
 section > div{
     background: white;
@@ -32,10 +41,13 @@ section > div{
     padding: 5%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-flow: row wrap;
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 3rem;
+    font-family: 'Abyssinica SIL', sans-serif;
+    border-style: solid;
+    border-color: black;
 }
 section > section{
     display: flex;
@@ -44,4 +56,27 @@ section > section{
     margin-bottom: 15px;
     margin-right: 5%;
     margin-left: 5%;
+}
+button:active{
+    background: rgba(230, 230, 230, 0.75)
+}
+.operation{
+    background: gray;
+}
+#equal{
+    background: blue;
+    color: lightgray;
+}
+#equal:active{
+    background: rgba(0,0,210,0.5)
+}
+#clear{
+    background: red;
+    color: white;
+}
+#clear:active{
+    background: rgba(230,0,0,0.8)
+}
+.operation, #equal, #clear{
+    border-radius: 5px;
 }
